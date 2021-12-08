@@ -1,4 +1,9 @@
 const url = "https://libretranslate.de/translate";
+const input = document.querySelector('#input').value;
+const output = document.querySelector('#output').value;
+const inputLang = document.querySelector('#input-language').value;
+const outputLang = document.querySelector('#output-language').value;
+
 
 document.querySelector("#translate").addEventListener('click',(input,output,inLang,outLang)=>{
     translateMessage(input,inLang,outLang).then(data=>output = data.translatedText)
